@@ -28,4 +28,4 @@ end
 
 return 
 
-% author: Xuanxuan wang
+% author: Xuanxuan Wang
