@@ -6,9 +6,12 @@ function [ out ] = mixer(sound1, sound2, level1, level2)
 % amplitude will multiplty LEVEL1 and LEVEL2 accordingly.
 % if LEVEL1 AND LEVEL is not given, the default value will be 1.
 %
-% Notice that the final output will be 
+% Notice that the final output will be normalized.
+%
 % Examples:  
 % ret = mixer(sound1, sound2); 
+% or
+% ret = mixer(sound1, sound2, 0.5, 2); 
 
 % find the  larger one
 maxRow = max(size(sound1, 1), size(sound2, 1));
